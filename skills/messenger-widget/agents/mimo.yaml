@@ -1,0 +1,4 @@
+interface:
+  display_name: "Messenger Widget"
+  short_description: "Create floating messenger widgets with QR codes for Telegram, Max, WhatsApp"
+  default_prompt: "Add a floating messenger contact widget to my site with QR codes and buttons for Telegram and Max"

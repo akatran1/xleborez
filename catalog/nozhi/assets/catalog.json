@@ -1,0 +1,462 @@
+[
+  {
+    "id": "stal-539-570-639-649-659-04-12-ко",
+    "name": "(539; 570; 639; 649; 659) × 0,4 × 12, комплект (2 лезвия)",
+    "brand": "Бисквит",
+    "price": 10176,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "4",
+      "thickness": "0.4"
+    },
+    "slug": "stal-539-570-639-649-659-04-12-ко"
+  },
+  {
+    "id": "stal-261-04-120-штифт-6-мм",
+    "name": "261 × 0,4 × 12,0 штифт 6 мм",
+    "brand": "SINMAG SM 302",
+    "price": 284,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "261",
+      "thickness": "0.4",
+      "width": "12.0",
+      "pin": "6"
+    },
+    "slug": "stal-261-04-120-штифт-6-мм"
+  },
+  {
+    "id": "stal-285-04-120-штифт-6-мм",
+    "name": "285 × 0,4 × 12,0 штифт 6 мм",
+    "brand": "SINMAG",
+    "price": 284,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "285",
+      "thickness": "0.4",
+      "width": "12.0",
+      "pin": "6"
+    },
+    "slug": "stal-285-04-120-штифт-6-мм"
+  },
+  {
+    "id": "stal-258-045-100-штифт-515-мм",
+    "name": "258 × 0,45 × 10,0 штифт 5×15 мм",
+    "brand": "Daub BRS 202",
+    "price": 301,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "258",
+      "thickness": "0.45",
+      "width": "10.0",
+      "pin": "5×15"
+    },
+    "slug": "stal-258-045-100-штифт-515-мм"
+  },
+  {
+    "id": "stal-297-045-100-штифт-515-мм",
+    "name": "297 × 0,45 × 10,0 штифт 5×15 мм",
+    "brand": "Daub BRS 208",
+    "price": 301,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "297",
+      "thickness": "0.45",
+      "width": "10.0",
+      "pin": "5×15"
+    },
+    "slug": "stal-297-045-100-штифт-515-мм"
+  },
+  {
+    "id": "stal-230-05-120-отверстие-ø6-мм-заклё",
+    "name": "230 × 0,5 × 12,0 отверстие Ø6 мм / заклёпка 6 мм",
+    "brand": "",
+    "price": 267,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "230",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "Ø 6 мм"
+    },
+    "slug": "stal-230-05-120-отверстие-ø6-мм-заклё"
+  },
+  {
+    "id": "stal-250-05-120-штифт-3-мм",
+    "name": "250 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "Wabama, СЭМЗ",
+    "price": 236,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "250",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "stal-250-05-120-штифт-3-мм"
+  },
+  {
+    "id": "stal-260-05-120-штифт-3-мм",
+    "name": "260 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "Jac, Arpo XPM21",
+    "price": 236,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "260",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "stal-260-05-120-штифт-3-мм"
+  },
+  {
+    "id": "stal-262-05-120-отверстие-ø3-мм-штифт",
+    "name": "262 × 0,5 × 12,0 отверстие Ø3 мм / штифт 5 мм",
+    "brand": "Jac, Кайман",
+    "price": 243,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "262",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "Ø 3 мм"
+    },
+    "slug": "stal-262-05-120-отверстие-ø3-мм-штифт"
+  },
+  {
+    "id": "stal-270-05-120-штифт-3-мм",
+    "name": "270 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "Лавина",
+    "price": 236,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "270",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "stal-270-05-120-штифт-3-мм"
+  },
+  {
+    "id": "stal-285-05-120-штифт-3-мм",
+    "name": "285 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "Wabama, Arpo XPM11",
+    "price": 236,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "285",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "stal-285-05-120-штифт-3-мм"
+  },
+  {
+    "id": "stal-300-05-120-штифт-3-мм",
+    "name": "300 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "",
+    "price": 251,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "300",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "stal-300-05-120-штифт-3-мм"
+  },
+  {
+    "id": "stal-315-05-120-отверстие-ø5-мм",
+    "name": "315 × 0,5 × 12,0 отверстие Ø5 мм",
+    "brand": "",
+    "price": 243,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "315",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "Ø 5 мм"
+    },
+    "slug": "stal-315-05-120-отверстие-ø5-мм"
+  },
+  {
+    "id": "stal-315-05-120-штифт-5-мм",
+    "name": "315 × 0,5 × 12,0 штифт 5 мм",
+    "brand": "",
+    "price": 276,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "315",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "5"
+    },
+    "slug": "stal-315-05-120-штифт-5-мм"
+  },
+  {
+    "id": "stal-330-05-120-штифт-3-мм",
+    "name": "330 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "",
+    "price": 276,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "330",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "stal-330-05-120-штифт-3-мм"
+  },
+  {
+    "id": "stal-350-05-120-штифт-3-мм",
+    "name": "350 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "CRV, Matas",
+    "price": 276,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "350",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "stal-350-05-120-штифт-3-мм"
+  },
+  {
+    "id": "stal-358-05-120-штифт-6-мм",
+    "name": "358 × 0,5 × 12,0 штифт 6 мм",
+    "brand": "Holly, National, Ibonhart",
+    "price": 316,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "358",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "6"
+    },
+    "slug": "stal-358-05-120-штифт-6-мм"
+  },
+  {
+    "id": "stal-400-05-120-отверстие-ø3-мм-штифт",
+    "name": "400 × 0,5 × 12,0 отверстие Ø3 мм / штифт 3 мм",
+    "brand": "Holly, National, Ibonhart",
+    "price": 316,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "400",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "Ø 3 мм"
+    },
+    "slug": "stal-400-05-120-отверстие-ø3-мм-штифт"
+  },
+  {
+    "id": "stal-127-04-358-штифт-6-мм",
+    "name": "12,7 × 0,4 × 358 штифт 6 мм",
+    "brand": "Holly, National, Ibonhart",
+    "price": 158,
+    "coating": "сталь",
+    "dimensions": {
+      "length": "7",
+      "thickness": "0.4",
+      "width": "358",
+      "pin": "6"
+    },
+    "slug": "stal-127-04-358-штифт-6-мм"
+  },
+  {
+    "id": "teflon-258-045-100-штифт-515-мм",
+    "name": "258 × 0,45 × 10,0 штифт 5×15 мм",
+    "brand": "Daub BRS 202",
+    "price": 435,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "258",
+      "thickness": "0.45",
+      "width": "10.0",
+      "pin": "5×15"
+    },
+    "slug": "teflon-258-045-100-штифт-515-мм"
+  },
+  {
+    "id": "teflon-297-045-100-штифт-515-мм",
+    "name": "297 × 0,45 × 10,0 штифт 5×15 мм",
+    "brand": "Daub BRS 208",
+    "price": 435,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "297",
+      "thickness": "0.45",
+      "width": "10.0",
+      "pin": "5×15"
+    },
+    "slug": "teflon-297-045-100-штифт-515-мм"
+  },
+  {
+    "id": "teflon-250-05-120-штифт-3-мм",
+    "name": "250 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "Wabama, СЭМЗ",
+    "price": 370,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "250",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "teflon-250-05-120-штифт-3-мм"
+  },
+  {
+    "id": "teflon-260-05-120-штифт-3-мм",
+    "name": "260 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "Jac, Arpo XPM21",
+    "price": 370,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "260",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "teflon-260-05-120-штифт-3-мм"
+  },
+  {
+    "id": "teflon-262-05-120-отверстие-ø3-мм-штифт",
+    "name": "262 × 0,5 × 12,0 отверстие Ø3 мм / штифт 5 мм",
+    "brand": "Jac, Кайман",
+    "price": 377,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "262",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "Ø 3 мм"
+    },
+    "slug": "teflon-262-05-120-отверстие-ø3-мм-штифт"
+  },
+  {
+    "id": "teflon-270-05-120-штифт-3-мм",
+    "name": "270 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "Лавина",
+    "price": 370,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "270",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "teflon-270-05-120-штифт-3-мм"
+  },
+  {
+    "id": "teflon-285-05-120-штифт-3-мм",
+    "name": "285 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "Wabama, Arpo XPM11",
+    "price": 370,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "285",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "teflon-285-05-120-штифт-3-мм"
+  },
+  {
+    "id": "teflon-300-05-120-штифт-3-мм",
+    "name": "300 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "",
+    "price": 386,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "300",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "teflon-300-05-120-штифт-3-мм"
+  },
+  {
+    "id": "teflon-315-05-120-отверстие-ø5-мм",
+    "name": "315 × 0,5 × 12,0 отверстие Ø5 мм",
+    "brand": "",
+    "price": 377,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "315",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "Ø 5 мм"
+    },
+    "slug": "teflon-315-05-120-отверстие-ø5-мм"
+  },
+  {
+    "id": "teflon-315-05-120-штифт-5-мм",
+    "name": "315 × 0,5 × 12,0 штифт 5 мм",
+    "brand": "",
+    "price": 410,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "315",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "5"
+    },
+    "slug": "teflon-315-05-120-штифт-5-мм"
+  },
+  {
+    "id": "teflon-330-05-120-штифт-3-мм",
+    "name": "330 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "",
+    "price": 410,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "330",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "teflon-330-05-120-штифт-3-мм"
+  },
+  {
+    "id": "teflon-350-05-120-штифт-3-мм",
+    "name": "350 × 0,5 × 12,0 штифт 3 мм",
+    "brand": "CRV, Matas",
+    "price": 410,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "350",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "3"
+    },
+    "slug": "teflon-350-05-120-штифт-3-мм"
+  },
+  {
+    "id": "teflon-358-05-120-штифт-6-мм",
+    "name": "358 × 0,5 × 12,0 штифт 6 мм",
+    "brand": "Holly, National, Ibonhart",
+    "price": 451,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "358",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "6"
+    },
+    "slug": "teflon-358-05-120-штифт-6-мм"
+  },
+  {
+    "id": "teflon-400-05-120-отверстие-ø3-мм-штифт",
+    "name": "400 × 0,5 × 12,0 отверстие Ø3 мм / штифт 3 мм",
+    "brand": "Holly, National, Ibonhart",
+    "price": 451,
+    "coating": "тефлон",
+    "dimensions": {
+      "length": "400",
+      "thickness": "0.5",
+      "width": "12.0",
+      "pin": "Ø 3 мм"
+    },
+    "slug": "teflon-400-05-120-отверстие-ø3-мм-штифт"
+  }
+]

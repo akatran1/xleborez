@@ -1,0 +1,6 @@
+interface:
+  display_name: "Messenger Icons Install"
+  short_description: "Add Telegram/MAX icons to websites"
+  icon_small: "./assets/Telegram_Logo.svg"
+  icon_large: "./assets/Max_Logo.svg"
+  default_prompt: "Use $messenger-icons-install to add Telegram and MAX icons to this website using the saved Hydroz links."
