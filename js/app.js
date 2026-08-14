@@ -432,6 +432,48 @@
     });
   }
 
+  // ========== CONTACT FORM ==========
+  function initContactForm() {
+    const form = document.getElementById('contact-form');
+    if (!form) return;
+
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      const submitBtn = form.querySelector('button');
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Отправляем...';
+
+      const formData = new FormData(form);
+      const data = {
+        name: formData.get('name'),
+        phone: formData.get('phone'),
+        message: formData.get('message'),
+      };
+
+      try {
+        const response = await fetch('/api/send-contact.php', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data),
+        });
+        const result = await response.json();
+
+        if (result.success) {
+          Toast.show('Спасибо! Мы ответим вам в ближайшее время.', 'success');
+          form.reset();
+        } else {
+          Toast.show('Ошибка при отправке. Попробуйте позже.', 'error');
+        }
+      } catch (err) {
+        Toast.show('Ошибка соединения.', 'error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Отправить';
+      }
+    });
+  }
+
   // ========== IMAGE GALLERY (detail page) ==========
   function initGallery() {
     const mainImg = document.getElementById('main-product-image');
@@ -461,6 +503,7 @@
     initQuantity();
     initAddToCart();
     initCallback();
+    initContactForm();
     initGallery();
 
     if (page === 'cart') {

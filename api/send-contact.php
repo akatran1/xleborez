@@ -1,6 +1,7 @@
 <?php
 /**
- * xleborez.ru — Обработчик обратного звонка
+ * xleborez.ru — Обработчик формы обратной связи (контакты)
+ * Принимает JSON, отправляет email + Telegram
  */
 
 header('Content-Type: application/json; charset=utf-8');
@@ -22,42 +23,41 @@ if (!$input) {
 
 $name = trim($input['name'] ?? '');
 $phone = trim($input['phone'] ?? '');
+$message = trim($input['message'] ?? '');
 
-if (empty($name) || empty($phone)) {
+if (empty($name) || empty($phone) || empty($message)) {
     http_response_code(400);
-    echo json_encode(['success' => false, 'error' => 'Заполните имя и телефон']);
+    echo json_encode(['success' => false, 'error' => 'Заполните все поля']);
     exit;
 }
 
 // Email
 $to = 'info@xleborez.ru';
-$subject = "Обратный звонок с xleborez.ru от {$name}";
-$message = "
-<h2>Запрос обратного звонка</h2>
+$subject = "Сообщение с xleborez.ru от {$name}";
+$html = "<h2>Сообщение с сайта</h2>
 <p><b>Имя:</b> {$name}</p>
 <p><b>Телефон:</b> {$phone}</p>
-<p><b>Дата:</b> " . date('d.m.Y H:i') . "</p>
-";
+<p><b>Сообщение:</b><br>" . nl2br(htmlspecialchars($message)) . "</p>
+<p><b>Дата:</b> " . date('d.m.Y H:i') . "</p>";
 
 $headers = "MIME-Version: 1.0\r\n";
 $headers .= "Content-Type: text/html; charset=utf-8\r\n";
 $headers .= "From: xleborez.ru <info@xleborez.ru>\r\n";
 
-mail($to, "=?UTF-8?B?" . base64_encode($subject) . "?=", $message, $headers);
+mail($to, "=?UTF-8?B?" . base64_encode($subject) . "?=", $html, $headers);
 
 // Telegram
-sendTelegram("🔔 Обратный звонок\nИмя: {$name}\nТелефон: {$phone}\nДата: " . date('d.m.Y H:i'));
+sendTelegram("✉️ Сообщение с сайта\nИмя: {$name}\nТелефон: {$phone}\nСообщение: {$message}\nДата: " . date('d.m.Y H:i'));
 
 echo json_encode(['success' => true]);
 
 function sendTelegram($message) {
-    // Kept outside the published website directory on the shared host.
-    $envFile = __DIR__ . '/../../../tmp/xleborez.env';
+    $envFile = __DIR__ . '/../.env';
     if (!file_exists($envFile)) return;
 
     $env = parse_ini_file($envFile);
-    $token = $env['TELEGRAM_BOT_TOKEN'] ?? $env['telegram_bot_token'] ?? '';
-    $chatId = $env['TELEGRAM_CHAT_ID'] ?? $env['telegram_chat_id'] ?? '';
+    $token = $env['telegram_bot_token'] ?? '';
+    $chatId = $env['telegram_chat_id'] ?? '';
 
     if (empty($token) || empty($chatId)) return;
 

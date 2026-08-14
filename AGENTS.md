@@ -24,6 +24,11 @@
 │   └── send-callback.php         ← обработчик обратного звонка → email + Telegram
 ├── css/style.css                 ← вся стилизация (1235 строк)
 ├── js/app.js                     ← корзина, навигация, тосты (490 строк)
+├── vidget/
+│   ├── messenger-widget.js       ← плавающий виджет мессенджеров (Telegram + Max)
+│   └── messenger-widget.css      ← стили виджета (dark glassmorphism)
+├── skills/
+│   └── messenger-widget/         ← навык для генерации виджета
 ├── img/
 │   ├── logo.svg                  ← логотип (SVG)
 │   ├── logo-old.png              ← PNG-версия (508×200, для хедера)
@@ -113,6 +118,28 @@
 - **DOMContentLoaded** — init корзины, кнопки «В корзину», обновление бейджа
 - **Табы каталога** — встроены в `catalog/nozhi/index.html` (отдельный `<script>`)
 - **Бургер-меню** — на мобильных
+
+## Messenger Widget (vidget/)
+
+Плавающий виджет мессенджеров (dark glassmorphism, vanilla JS, 0 зависимостей).
+
+**Конфигурация на сайте:**
+```js
+MessengerWidget.init({
+  telegram: { username: 'andresemykin', link: 'https://t.me/andresemykin' },
+  max: { username: 'ООО Фитфуд', link: 'https://max.ru/u/f9LHodD0cOKSzHGEQIX3HAhXGwgQALr4CxadoVlHiQKQ9ug17KGfP-cbEMU' }
+});
+```
+
+**Интеграция:** виджет добавлен на все 39 HTML-страниц (index, contacts, checkout, cart, каталог, все товары). Скрипт подключается перед `</body>`:
+```html
+<script src="vidget/messenger-widget.js"></script>
+```
+CSS загружается автоматически из той же директории.
+
+**Генератор** (`generate_catalog.py`) тоже добавляет виджет на новые страницы товаров.
+
+**Изменение конфигурации:** править `MessengerWidget.init({...})` в каждой странице + шаблон в `generate_catalog.py`.
 
 ## PHP-обработчики
 

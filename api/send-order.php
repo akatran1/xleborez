@@ -100,12 +100,13 @@ function getDeliveryLabel($code) {
 }
 
 function sendTelegram($message) {
-    $envFile = __DIR__ . '/../.env';
+    // Kept outside the published website directory on the shared host.
+    $envFile = __DIR__ . '/../../../tmp/xleborez.env';
     if (!file_exists($envFile)) return false;
 
     $env = parse_ini_file($envFile);
-    $token = $env['telegram_bot_token'] ?? '';
-    $chatId = $env['telegram_chat_id'] ?? '';
+    $token = $env['TELEGRAM_BOT_TOKEN'] ?? $env['telegram_bot_token'] ?? '';
+    $chatId = $env['TELEGRAM_CHAT_ID'] ?? $env['telegram_chat_id'] ?? '';
 
     if (empty($token) || empty($chatId)) return false;
 

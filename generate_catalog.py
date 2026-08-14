@@ -279,6 +279,15 @@ catalog_html = f'''<!DOCTYPE html>
   }});
   </script>
   <script src="/js/app.js"></script>
+
+  <!-- Messenger Widget -->
+  <script src="/vidget/messenger-widget.js"></script>
+  <script>
+    MessengerWidget.init({
+      telegram: { username: 'andresemykin', link: 'https://t.me/andresemykin' },
+      max: { username: 'ООО Фитфуд', link: 'https://max.ru/u/f9LHodD0cOKSzHGEQIX3HAhXGwgQALr4CxadoVlHiQKQ9ug17KGfP-cbEMU' }
+    });
+  </script>
 </body>
 </html>'''
 
@@ -504,9 +513,18 @@ def generate_product_page(p, all_products):
   </footer>
 
   <script src="/js/app.js"></script>
+
+  <!-- Messenger Widget -->
+  <script src="/vidget/messenger-widget.js"></script>
+  <script>
+    MessengerWidget.init({
+      telegram: { username: 'andresemykin', link: 'https://t.me/andresemykin' },
+      max: { username: 'ООО Фитфуд', link: 'https://max.ru/u/f9LHodD0cOKSzHGEQIX3HAhXGwgQALr4CxadoVlHiQKQ9ug17KGfP-cbEMU' }
+    });
+  </script>
 </body>
 </html>'''
-    
+
     return page
 
 # Generate all product pages

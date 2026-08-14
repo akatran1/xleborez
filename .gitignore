@@ -1,35 +1,8 @@
-# xleborez.ru
-
-# OS
-.DS_Store
-Thumbs.db
-*.swp
-*.swo
-*~
-
-# IDE
-.vscode/
-.idea/
-*.sublime-*
-
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
-dist/
-build/
-*.egg
-.venv/
-venv/
-
-# Logs
-*.log
-npm-debug.log*
-
-# Env
+# Local credentials. Keep real values outside the published site directory.
 .env
-.env.local
+.env.*
+!.env.example
 
-# Temp
-/tmp/
-*.tmp
+# Local development dependencies.
+node_modules/
+.mimocode/
