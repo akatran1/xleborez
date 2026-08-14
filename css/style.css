@@ -168,6 +168,10 @@ p:last-child { margin-bottom: 0; }
   padding: var(--space-3xl) 0;
 }
 
+.contacts-page-title {
+  margin: var(--space-xl) 0;
+}
+
 .section-alt {
   background: var(--color-bg-alt);
 }
