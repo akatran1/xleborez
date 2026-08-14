@@ -307,9 +307,11 @@ with open(TEMPLATE_DETAIL, 'r', encoding='utf-8') as f:
 def generate_product_page(p, all_products):
     """Generate product detail page from template"""
     dims = p['dimensions']
+    material = 'Тефлоновые' if p['coating'] == 'тефлон' else 'Стальные'
+    brand = f"{p['brand']} " if p['brand'] else ''
     coating_ru = 'тефлоновым покрытием' if p['coating'] == 'тефлон' else 'стальные'
     
-    title = f"Ножи для хлеборезки {p['name'][:50]} — купить | ООО Фитфуд"
+    title = f"{material} ножи для хлеборезки {brand}{p['name'][:50]} — купить | ООО Фитфуд"
     desc = f"Ножи для хлеборезки {p['name'][:60]} — {p['price']} ₽. {coating_ru.capitalize()}. "
     if p['brand']:
         desc += f"Производитель: {p['brand']}. "
@@ -424,7 +426,7 @@ def generate_product_page(p, all_products):
         </div>
       </div>
       <div class="product-detail__info">
-        <h1>Ножи для хлеборезки {p['name'][:60]}</h1>
+        <h1>{material} ножи для хлеборезки {brand}{p['name'][:60]}</h1>
         <div class="product-detail__price">{p['price']} ₽</div>
         <div class="product-detail__meta">
           <div class="product-detail__meta-item">
