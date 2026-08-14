@@ -1004,6 +1004,10 @@
       <p>Оставьте номер — перезвоним за 5 минут и поможем подобрать нож</p>
       <form class="callback__form" id="callback-form">
         <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required>
+        <label class="form-consent form-consent--callback">
+          <input type="checkbox" name="personal_data_consent" value="yes" required>
+          <span>Я даю согласие на обработку персональных данных согласно <a href="/privacy-policy/" target="_blank" rel="noopener">Политике</a>.</span>
+        </label>
         <button type="submit" class="btn btn--primary">Заказать звонок</button>
       </form>
     </div>

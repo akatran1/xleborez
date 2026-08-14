@@ -22,8 +22,9 @@ if (!$input) {
 
 $name = trim($input['name'] ?? '');
 $phone = trim($input['phone'] ?? '');
+$consent = ($input['personal_data_consent'] ?? false) === true;
 
-if (empty($name) || empty($phone)) {
+if (empty($name) || empty($phone) || !$consent) {
     http_response_code(400);
     echo json_encode(['success' => false, 'error' => 'Заполните имя и телефон']);
     exit;
@@ -36,6 +37,7 @@ $message = "
 <h2>Запрос обратного звонка</h2>
 <p><b>Имя:</b> {$name}</p>
 <p><b>Телефон:</b> {$phone}</p>
+<p><b>Согласие на обработку персональных данных:</b> получено</p>
 <p><b>Дата:</b> " . date('d.m.Y H:i') . "</p>
 ";
 
@@ -46,7 +48,7 @@ $headers .= "From: xleborez.ru <info@xleborez.ru>\r\n";
 mail($to, "=?UTF-8?B?" . base64_encode($subject) . "?=", $message, $headers);
 
 // Telegram
-sendTelegram("🔔 Обратный звонок\nИмя: {$name}\nТелефон: {$phone}\nДата: " . date('d.m.Y H:i'));
+sendTelegram("🔔 Обратный звонок\nИмя: {$name}\nТелефон: {$phone}\nСогласие на обработку персональных данных: получено\nДата: " . date('d.m.Y H:i'));
 
 echo json_encode(['success' => true]);
 

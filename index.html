@@ -299,6 +299,10 @@
       <form class="callback__form">
         <input type="text" name="name" placeholder="Ваше имя" required minlength="2">
         <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" required minlength="10">
+        <label class="form-consent form-consent--callback">
+          <input type="checkbox" name="personal_data_consent" value="yes" required>
+          <span>Я даю согласие на обработку персональных данных согласно <a href="/privacy-policy/" target="_blank" rel="noopener">Политике</a>.</span>
+        </label>
         <button type="submit" class="btn btn--primary btn--lg">Получить скидку</button>
       </form>
     </div>

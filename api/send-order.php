@@ -29,10 +29,11 @@ $email = trim($input['email'] ?? '');
 $delivery = trim($input['delivery'] ?? 'self');
 $address = trim($input['address'] ?? '');
 $comment = trim($input['comment'] ?? '');
+$consent = ($input['personal_data_consent'] ?? false) === true;
 $items = $input['items'] ?? [];
 $total = floatval($input['total'] ?? 0);
 
-if (empty($name) || empty($phone) || empty($items)) {
+if (empty($name) || empty($phone) || empty($items) || !$consent) {
     http_response_code(400);
     echo json_encode(['success' => false, 'error' => 'Заполните обязательные поля']);
     exit;
@@ -48,6 +49,7 @@ $html .= "<p><b>Email:</b> " . (!empty($email) ? $email : 'не указан') .
 $html .= "<p><b>Доставка:</b> " . getDeliveryLabel($delivery) . "</p>";
 $html .= !empty($address) ? "<p><b>Адрес:</b> {$address}</p>" : '';
 $html .= !empty($comment) ? "<p><b>Комментарий:</b> {$comment}</p>" : '';
+$html .= "<p><b>Согласие на обработку персональных данных:</b> получено</p>";
 
 $html .= "<h3>Товары:</h3><table border='1' cellpadding='8' cellspacing='0' style='border-collapse:collapse;width:100%;'>";
 $html .= "<tr style='background:#fbb710;'><th>Товар</th><th>Кол-во</th><th>Цена</th><th>Сумма</th></tr>";

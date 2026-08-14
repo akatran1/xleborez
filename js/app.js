@@ -361,6 +361,7 @@
         delivery: formData.get('delivery'),
         address: formData.get('address'),
         comment: formData.get('comment'),
+        personal_data_consent: formData.get('personal_data_consent') === 'yes',
         items: orderItems,
         total: orderTotal,
       };
@@ -406,6 +407,7 @@
         const data = {
           name: formData.get('name'),
           phone: formData.get('phone'),
+          personal_data_consent: formData.get('personal_data_consent') === 'yes',
         };
 
         try {
@@ -449,6 +451,7 @@
         name: formData.get('name'),
         phone: formData.get('phone'),
         message: formData.get('message'),
+        personal_data_consent: formData.get('personal_data_consent') === 'yes',
       };
 
       try {

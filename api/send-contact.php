@@ -24,8 +24,9 @@ if (!$input) {
 $name = trim($input['name'] ?? '');
 $phone = trim($input['phone'] ?? '');
 $message = trim($input['message'] ?? '');
+$consent = ($input['personal_data_consent'] ?? false) === true;
 
-if (empty($name) || empty($phone) || empty($message)) {
+if (empty($name) || empty($phone) || empty($message) || !$consent) {
     http_response_code(400);
     echo json_encode(['success' => false, 'error' => 'Заполните все поля']);
     exit;
@@ -38,6 +39,7 @@ $html = "<h2>Сообщение с сайта</h2>
 <p><b>Имя:</b> {$name}</p>
 <p><b>Телефон:</b> {$phone}</p>
 <p><b>Сообщение:</b><br>" . nl2br(htmlspecialchars($message)) . "</p>
+<p><b>Согласие на обработку персональных данных:</b> получено</p>
 <p><b>Дата:</b> " . date('d.m.Y H:i') . "</p>";
 
 $headers = "MIME-Version: 1.0\r\n";
@@ -47,7 +49,7 @@ $headers .= "From: xleborez.ru <info@xleborez.ru>\r\n";
 mail($to, "=?UTF-8?B?" . base64_encode($subject) . "?=", $html, $headers);
 
 // Telegram
-sendTelegram("✉️ Сообщение с сайта\nИмя: {$name}\nТелефон: {$phone}\nСообщение: {$message}\nДата: " . date('d.m.Y H:i'));
+sendTelegram("✉️ Сообщение с сайта\nИмя: {$name}\nТелефон: {$phone}\nСообщение: {$message}\nСогласие на обработку персональных данных: получено\nДата: " . date('d.m.Y H:i'));
 
 echo json_encode(['success' => true]);
 
